@@ -21,8 +21,8 @@ const SKILLS = {
 };
 
 const LANGUAGES = [
-    ["English", "IELTS overall band 8", "assets/IELTS.jpg", "IELTS certificate"],
-    ["Mandarin", "TOCFL A2", "assets/tocfl.jpg", "TOCFL certificate"],
+    ["English", "IELTS", "Overall Band 8", "", ""],
+    ["Mandarin", "TOCFL", "A2", "", ""],
     ["Bahasa Indonesia", "Mother tongue", "", ""],
 ];
 
@@ -52,7 +52,7 @@ const ORGANISATIONS = [
     ["LIDAR Workshop (Light Detection and Ranging)", "assets/Lidar.jpg"],
 ];
 
-// [name, picture]
+
 const CERTIFICATES = [
     ["Kumon Math Completer, 2019", "assets/kumonm.jpeg"],
     ["Kumon English Completer, 2019", "assets/kumone.jpeg"],
