@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Callista Hendarto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav aria-label="Main">
+        <a href="index.html#hero">Hi</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#languages">Languages</a>
+        <a href="projects.html" class="on" aria-current="page">Projects</a>
+        <a href="involvement.html">Involvement</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="projects">
+            <h2>Projects &amp; courses</h2>
+            <div class="grid" id="projGrid"></div>
+
+            <div class="courses2">
+            <figure class="cc left zoomable" data-cap="Python First certificate">
+                <div class="sq">
+                    <img src="assets/PythonFirst.jpg" alt="Python First certificate">
+                </div>
+                <figcaption>Python First</figcaption>
+            </figure>
+
+                <div class="mid">
+                    <img class="ic big" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" onerror="this.remove()">
+                    <h3>Coding courses</h3>
+                    <p>Two Python courses at Koding Next, where I learned to build small programs and games step by step.</p>
+                    <span class="hand">Python First, Aug 2025<br>Python Arcade, Mar 2026</span>
+                </div>
+
+            <figure class="cc right zoomable" data-cap="Python Arcade certificate">
+                <div class="sq">
+                    <img src="assets/PythonArcade.jpg">
+                </div>
+                <figcaption>Python Arcade</figcaption>
+            </figure>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="lb" onclick="this.close()">
+        <img id="lbImg" alt="">
+        <p id="lbCap"></p>
+        <a class="btn" id="lbDl" onclick="event.stopPropagation()">Download certificate</a>
+    </dialog>
+
+    <dialog id="dlg">
+        <h3 id="dT"></h3>
+        <p id="dP"></p>
+        <a class="btn" id="dL" target="_blank" rel="noopener">Open project</a>
+        <button class="btn alt" onclick="dlg.close()">Close</button>
+    </dialog>
+
+    <footer>Made by Callista Hendarto, 2026</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

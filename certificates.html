@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certificates | Callista Hendarto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav aria-label="Main">
+        <a href="index.html#hero">Hi</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#languages">Languages</a>
+        <a href="projects.html">Projects</a>
+        <a href="involvement.html">Involvement</a>
+        <a href="certificates.html" class="on" aria-current="page">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="certs">
+            <h2>My Acomplishments</h2>
+            <div class="certs" id="certGrid"></div>
+        </section>
+    </main>
+
+    <dialog id="lb" onclick="this.close()">
+        <img id="lbImg" alt="">
+        <p id="lbCap"></p>
+        <a class="btn" id="lbDl" onclick="event.stopPropagation()">Download certificate</a>
+    </dialog>
+
+    <footer>Made by Callista Hendarto, 2026</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

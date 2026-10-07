@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Callista Hendarto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav aria-label="Main">
+        <a href="index.html#hero">Hi</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#languages">Languages</a>
+        <a href="projects.html">Projects</a>
+        <a href="involvement.html">Involvement</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div>
+                <span class="hand hello">hello, I'm</span>
+                <h1>Callista<br>Hendarto</h1>
+                <p>Senior high school student from Jakarta who likes breaking big problems into small ones, then building something useful out of the pieces.</p>
+                <a class="btn" href="projects.html">See my projects</a>
+                <a class="btn alt" href="#contact">Say hi</a>
+            </div>
+
+            <div id="stage">
+                <svg id="rope">
+                    <path id="ropePath" fill="none" stroke="#C9486F" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+                <div id="card" tabindex="0" aria-label="Draggable ID card">
+                    <div class="clip"></div>
+                    <div class="ph">
+                        <img src="assets/profile.jpeg" alt="Callista" onerror="this.replaceWith('CH')">
+                    </div>
+                    <b>Callista Hendarto</b>
+                    <span>Student · Programmer · Designer</span>
+                </div>
+                <span class="hand tip">grab me!</span>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <div class="about">
+                <div>
+                    <p>My interest in programming started at high school, where I found out I enjoy turning complicated problems into small, manageable parts, and then into something people can actually use.</p>
+                    <p>Outside of code I like design, music and leadership. School organisations and projects let me work with different people, lead teams and run events. They taught me to communicate clearly, take responsibility and stay open to other ideas.</p>
+                </div>
+                <ul class="note">
+                    <li>Based in Jakarta, Indonesia</li>
+                    <li>Curious about how things work</li>
+                    <li>Loves a good team and a good working program</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>What I work with</h2>
+            <div class="skillwrap" id="skillWrap"></div>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="langs" id="langGrid"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <div class="links">
+                <a class="btn" id="mailBtn" href="#">Email</a>
+                <span class="hand hello">callista.hendarto@gmail.com</span>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="lb" onclick="this.close()">
+        <img id="lbImg" alt="">
+        <p id="lbCap"></p>
+        <a class="btn" id="lbDl" onclick="event.stopPropagation()">Download certificate</a>
+    </dialog>
+
+    <footer>Made by Callista Hendarto, 2026</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
