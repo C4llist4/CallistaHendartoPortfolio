@@ -21,8 +21,8 @@ const SKILLS = {
 };
 
 const LANGUAGES = [
-    ["English", "IELTS", "Overall Band 8", "", ""],
-    ["Mandarin", "TOCFL", "A2", "", ""],
+    ["English", "IELTS - Overall Band 8"],
+    ["Mandarin", "TOCFL - A2"],
     ["Bahasa Indonesia", "Mother tongue", "", ""],
 ];
 
@@ -114,20 +114,10 @@ function buildLanguages() {
     const grid = $("#langGrid");
     if (!grid) return;
 
-    for (const [name, level, picture, caption] of LANGUAGES) {
-        const card = document.createElement(picture ? "button" : "div");
+    for (const [name, level] of LANGUAGES) {
+        const card = document.createElement("div");
         card.className = "lang";
         card.innerHTML = `<b>${name}</b><small>${level}</small>`;
-
-        if (picture) {
-            card.innerHTML += `<span class="hand">view certificate</span>`;
-            card.onclick = () => {
-                // only open once the picture really exists
-                const test = new Image();
-                test.onload = () => showPreview(picture, caption, true);
-                test.src = picture;
-            };
-        }
 
         grid.append(card);
     }
