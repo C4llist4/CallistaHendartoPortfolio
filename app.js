@@ -37,7 +37,7 @@ const PROJECTS = [
         title: "Hospital Website",
         label: "web project",
         text: "A hospital website built with HTML and CSS.",
-        link: "https://drive.google.com/YOUR_HOSPITAL_LINK",
+        link: "https://drive.google.com/drive/folders/1RVAHYrdAWpgzNCTFZhUSo9kadg8rLSYg?usp=drive_link",
     },
 ];
 
