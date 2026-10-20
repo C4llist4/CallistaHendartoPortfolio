@@ -44,7 +44,7 @@ const PROJECTS = [
 const ORGANISATIONS = [
     ["Second Class Ranger Scout", "assets/Bantara.jpg"],
     ["Chairman of INFLAMÄ", "assets/INFLAMA.jpg"],
-    ["Student Council President", "assets/osis.jpg"],
+    ["Student Council President", "assets/OSISSERTIF.jpg"],
     ["REGROVVE Design Division", "assets/REGROVVE.jpeg"],
     ["Canisius College Model United Nation 2025", "assets/CCMUN.jpg"],
     ["PSKG Model United Nation 2025", "assets/PSKG.jpg"],
